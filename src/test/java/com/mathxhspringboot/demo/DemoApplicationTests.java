@@ -2,6 +2,7 @@ package com.mathxhspringboot.demo;
 
 import com.mathxhspringboot.demo.component.ProjectProperties;
 import com.mathxhspringboot.demo.web.HelloController;
+import com.mathxhspringboot.demo.web.HelloWorldController;
 import com.mathxhspringboot.demo.web.UserController;
 import org.junit.Assert;
 import org.junit.Before;
@@ -37,7 +38,7 @@ public class DemoApplicationTests {
 	@Before
     public void setUp() throws Exception {
         mvc = MockMvcBuilders.standaloneSetup(new HelloController(),
-                new UserController()).build();
+                new UserController(),new HelloWorldController()).build();
 
     }
 
