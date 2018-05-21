@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 
 @ControllerAdvice
 public class GlobalExceptionHandler {
-    public  static final String  DEFAULT_ERROR_VIEW = "error";
+    public  static final String  DEFAULT_ERROR_VIEW = "errorpage";
 
     /*
     *  只需要在Controller中抛出Exception，当然我们可能会有多种不同的Exception。然后在@ControllerAdvice类中，根据抛出的具体
