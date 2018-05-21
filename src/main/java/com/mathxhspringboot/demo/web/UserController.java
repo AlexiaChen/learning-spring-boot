@@ -1,6 +1,6 @@
 package com.mathxhspringboot.demo.web;
 
-import com.mathxhspringboot.demo.DAO.User;
+import com.mathxhspringboot.demo.dao.User;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;

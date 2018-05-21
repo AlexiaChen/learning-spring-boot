@@ -3,7 +3,6 @@ package com.mathxhspringboot.demo.web;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 
 /**
  * Created by MathxH on 2018/3/27.
@@ -12,13 +11,14 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloController {
 
     @RequestMapping("/hello")
-    public String hello(){
+    public String hello() {
         return "Hello World";
     }
 
     @RequestMapping("/")
     public  String index(ModelMap map){
-        map.addAttribute("host","Hello Thyleaf");
+        map.addAttribute("host","Hello Thymeleaf");
+        map.addAttribute("author","MathxH");
         return "index";
     }
 }

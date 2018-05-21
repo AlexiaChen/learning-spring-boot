@@ -1,4 +1,4 @@
-package com.mathxhspringboot.demo.DAO;
+package com.mathxhspringboot.demo.dao;
 
 /**
  * Created by MathxH on 2018/3/29.
