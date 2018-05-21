@@ -4,6 +4,7 @@ package com.mathxhspringboot.demo.web;
  * Created by MathxH on 2018/5/13.
  */
 
+import com.mathxhspringboot.demo.exception.MyException;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -13,5 +14,10 @@ public class HelloWorldController {
     @RequestMapping(value = "/hello", method = RequestMethod.GET)
     public String helloWorld() {
         return "Hello World";
+    }
+
+    @RequestMapping(value = "/exception",method = RequestMethod.GET)
+    public  String helloException() throws  MyException{
+        throw new MyException("hello Exception");
     }
 }
