@@ -16,8 +16,13 @@ public class HelloWorldController {
         return "Hello World";
     }
 
-    @RequestMapping(value = "/exception",method = RequestMethod.GET)
-    public  String helloException() throws  MyException{
-        throw new MyException("hello Exception");
+    @RequestMapping(value = "/exception/hello",method = RequestMethod.GET)
+    public  String helloException() throws  Exception{
+        throw new Exception("hello Exception");
+    }
+
+    @RequestMapping(value = "/exception/json", method = RequestMethod.GET)
+    public String jsonException() throws MyException {
+        throw  new MyException("json Exception");
     }
 }
