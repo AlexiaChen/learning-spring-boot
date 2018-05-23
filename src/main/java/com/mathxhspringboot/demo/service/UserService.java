@@ -1,6 +1,6 @@
 package com.mathxhspringboot.demo.service;
 
-import com.mathxhspringboot.demo.dao.User;
+import com.mathxhspringboot.demo.domain.User;
 
 import java.util.List;
 

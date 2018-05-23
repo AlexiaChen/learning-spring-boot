@@ -1,6 +1,6 @@
 package com.mathxhspringboot.demo.service;
 
-import com.mathxhspringboot.demo.dao.User;
+import com.mathxhspringboot.demo.domain.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Service;

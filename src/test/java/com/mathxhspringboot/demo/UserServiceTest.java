@@ -18,10 +18,7 @@ public class UserServiceTest {
 
     @Before
     public void setUp() throws Exception {
-
-        userService.createUserTable();
         userService.deleteAllUsers();
-
     }
 
     @Test
